@@ -1,16 +1,8 @@
 
-<h1>Welcome
-<% if user_signed_in? %>
-	,<%= current_user.email%></h1>
-	<%= link_to 'LogOut', destroy_user_session_path , method: :delete%>
-	<%# if current_student.role == true %>
-		<%#= link_to 'New Question', new_question_path %>
-	<%# else%>
-		You are login
-	<%# end %>
 
-<% else %>
-</h1>
-	<%= link_to 'SignUp', new_user_registration_path %>
-	<%= link_to 'Login', new_user_session_path %>
+<% if user_signed_in? %>
+	<div><li><%= link_to 'LogOut', destroy_user_session_path , method: :delete%></li></div>
+<% else %><br><br><br><br><br><br>
+<div class="btn btn-primary"><%= link_to 'SignUp', new_user_registration_path %></div>
+
 <% end %>

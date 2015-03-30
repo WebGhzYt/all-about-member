@@ -1,0 +1,16 @@
+<footer class="footer">
+<div class="container">   
+
+   <nav>
+		    <ul class="nav navbar-nav navbar-right">    
+				<li><%= link_to "About",  '/static_pages/aboutus' %></li>
+			    <li><%= link_to "Contact",  '/static_pages/contactus' %></li>
+			    <li><a href="#">News</a></li>
+		    	<% if user_signed_in? %>
+					<li><%= link_to 'LogOut', destroy_user_session_path , method: :delete%></li>
+				<% else %>	
+				<% end %>
+		    </ul>
+  </nav>
+  </div>
+</footer>

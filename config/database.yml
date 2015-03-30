@@ -2,7 +2,7 @@ development:
   host: localhost
   adapter: postgresql
   encoding: unicode
-  database: all-about-member
+  database: member
   pool: 5
   username: postgres
   password: postgres
@@ -10,10 +10,10 @@ development:
 
 
 production:
-  host: all_about_member
+  host: member
   adapter: postgresql
   encoding: unicode
-  database: all-about-member
+  database: member
   pool: 5
   username: postgres
   password: postgres
